@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Poppins&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="navbar">
+        <div class="icon">
+          <img src="images/coinvert-d.svg" class="website-logo" />
+        </div>
+        <div class="nav-icons">
+          <a href="Home Page.html">Home</a>
+          <a href="https://api.exchangerate-api.com/v4/latest/USD">Live Currency</a>
+          <a href="">Currency API</a>
+          <a href="">Contact Us</a>
+        </div>
+      </div>
+
+      <h1 style="text-align: center; font-weight: 600; color: white">
+        Trusted Global Currency Converter Solutions
+      </h1>
+      <p
+        style="
+          text-align: center;
+          font-size: 1.1rem;
+          opacity: 0.9;
+          color: whitesmoke;
+        "
+      >
+        Best source for currency conversion and tracking exchange rates
+      </p>
+
+      <div class="main">
+        <h1 style="font-weight: 500; font-size: 2.7rem">Currency Converter</h1>
+
+        <div class="currency">
+          <div class="labels">
+            <label for="amount">Amount</label>
+            <label for="from">From</label>
+            <label for="after" style="margin-left: 80px">To</label>
+          </div>
+          <div class="inputs searchBox">
+            <input type="text" placeholder="0.00" id="amount" />
+
+            <select id="from sel1" class="from">
+              <option value="AED">AED</option>
+              <option value="ARS">ARS</option>
+              <option value="AUD">AUD</option>
+              <option value="BGN">BGN</option>
+              <option value="BRL">BRL</option>
+              <option value="BSD">BSD</option>
+              <option value="CAD">CAD</option>
+              <option value="CHF">CHF</option>
+              <option value="CLP">CLP</option>
+              <option value="CNY">CNY</option>
+              <option value="COP">COP</option>
+              <option value="CZK">CZK</option>
+              <option value="DKK">DKK</option>
+              <option value="DOP">DOP</option>
+              <option value="EGP">EGP</option>
+              <option value="EUR">EUR</option>
+              <option value="FJD">FJD</option>
+              <option value="GBP">GBP</option>
+              <option value="GTQ">GTQ</option>
+              <option value="HKD">HKD</option>
+              <option value="HRK">HRK</option>
+              <option value="HUF">HUF</option>
+              <option value="IDR">IDR</option>
+              <option value="ILS">ILS</option>
+              <option value="INR">INR</option>
+              <option value="ISK">ISK</option>
+              <option value="JPY">JPY</option>
+              <option value="KRW">KRW</option>
+              <option value="KZT">KZT</option>
+              <option value="MXN">MXN</option>
+              <option value="MYR">MYR</option>
+              <option value="NOK">NOK</option>
+              <option value="NZD">NZD</option>
+              <option value="PAB">PAB</option>
+              <option value="PEN">PEN</option>
+              <option value="PHP">PHP</option>
+              <option value="PKR">PKR</option>
+              <option value="PLN">PLN</option>
+              <option value="PYG">PYG</option>
+              <option value="RON">RON</option>
+              <option value="RUB">RUB</option>
+              <option value="SAR">SAR</option>
+              <option value="SEK">SEK</option>
+              <option value="SGD">SGD</option>
+              <option value="THB">THB</option>
+              <option value="TRY">TRY</option>
+              <option value="TWD">TWD</option>
+              <option value="UAH">UAH</option>
+              <option value="USD">USD</option>
+              <option value="UYU">UYU</option>
+              <option value="VND">VND</option>
+              <option value="ZAR">ZAR</option>
+            </select>
+         
+            <select id="after sel2" class="to">
+              <option value="AED">AED</option>
+              <option value="ARS">ARS</option>
+              <option value="AUD">AUD</option>
+              <option value="BGN">BGN</option>
+              <option value="BRL">BRL</option>
+              <option value="BSD">BSD</option>
+              <option value="CAD">CAD</option>
+              <option value="CHF">CHF</option>
+              <option value="CLP">CLP</option>
+              <option value="CNY">CNY</option>
+              <option value="COP">COP</option>
+              <option value="CZK">CZK</option>
+              <option value="DKK">DKK</option>
+              <option value="DOP">DOP</option>
+              <option value="EGP">EGP</option>
+              <option value="EUR">EUR</option>
+              <option value="FJD">FJD</option>
+              <option value="GBP">GBP</option>
+              <option value="GTQ">GTQ</option>
+              <option value="HKD">HKD</option>
+              <option value="HRK">HRK</option>
+              <option value="HUF">HUF</option>
+              <option value="IDR">IDR</option>
+              <option value="ILS">ILS</option>
+              <option value="INR">INR</option>
+              <option value="ISK">ISK</option>
+              <option value="JPY">JPY</option>
+              <option value="KRW">KRW</option>
+              <option value="KZT">KZT</option>
+              <option value="MXN">MXN</option>
+              <option value="MYR">MYR</option>
+              <option value="NOK">NOK</option>
+              <option value="NZD">NZD</option>
+              <option value="PAB">PAB</option>
+              <option value="PEN">PEN</option>
+              <option value="PHP">PHP</option>
+              <option value="PKR">PKR</option>
+              <option value="PLN">PLN</option>
+              <option value="PYG">PYG</option>
+              <option value="RON">RON</option>
+              <option value="RUB">RUB</option>
+              <option value="SAR">SAR</option>
+              <option value="SEK">SEK</option>
+              <option value="SGD">SGD</option>
+              <option value="THB">THB</option>
+              <option value="TRY">TRY</option>
+              <option value="TWD">TWD</option>
+              <option value="UAH">UAH</option>
+              <option value="USD">USD</option>
+              <option value="UYU">UYU</option>
+              <option value="VND">VND</option>
+              <option value="ZAR">ZAR</option>
+            </select>
+          </div>
+          <button type="submit" class="convert-btn convert">
+            Get Exchange Rates
+          </button>
+          <button type="" class="convert-btn" onclick="clearVal()">
+            Reset
+          </button>
+          <div id="finalAmount" class="text-center">
+            <!-- Display the converted amount -->
+            <h2 style="font-weight: 500; margin-top: 1rem">
+              Converted Amount :
+              <span class="finalValue" style="color: green"> </span>
+            </h2>
+          </div>
+        </div>
+      </div>
+      <div class="share">
+        <a href="https://www.instagram.com/currencyxchangerate/"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://twitter.com/getconverter"><i class="fa-brands fa-twitter"></i></a>
+        <a href="https://www.facebook.com/currencyconverter/"><i class="fa-brands fa-facebook"></i></a>
+        <div class="space"></div>
+      </div>
+    </div>
+
+    <div class="service">
+      <div class="card">
+        <div class="img"><img src="images/service-1.jpg" /></div>
+        <div class="heading">
+          <p>Real-Time Currency Conversion</p>
+        </div>
+        <div class="content">
+          Accurate and up-to-date currency exchange rates to convert your money
+          instantly
+        </div>
+      </div>
+      <div class="card">
+        <div class="img"><img src="images/service-2.jpg" /></div>
+        <div class="heading">
+          <p>Multiple Currecny Support</p>
+        </div>
+        <div class="content">
+          Convert and currency from our wide range of supported currencies to
+          meet your specific needs.
+        </div>
+      </div>
+      <div class="card">
+        <div class="img"><img src="images/service-3.jpg" /></div>
+        <div class="heading">
+          <p>Convenient and Secure Transactions</p>
+        </div>
+        <div class="content">
+          Seamless and reliable currecny conversions with enhanced security
+          measures to protect your money.
+        </div>
+      </div>
+    </div>
+
+    <div class="about">
+      <div class="about-conte">
+        <div class="about-heading">
+          <p>About Us</p>
+        </div>
+        <div class="about-content">
+          Welcome to a, your trusted currency converter in Delhi, DL. We are
+          dedicated to providing you with accurate and reliable currency
+          conversion services.
+          <br />
+          <br />
+          With our user-friendly interface and up-to-date exchange rates, we
+          make it easy for you to convert currencies quickly and efficiently.
+          Whether you are a traveler, a business owner, or simply someone who
+          needs to convert currencies regularly, our platform is designed to
+          meet your needs. Trust a to help you with all your currency conversion
+          requirements
+        </div>
+      </div>
+      <div class="image">
+        <img src="images/about-img.jpg" />
+      </div>
+    </div>
+    <br />
+    <div class="line"></div>
+
+    <img
+      src="images/coinvert-d.svg"
+      class="website-logo"
+      style="height: 50px; width: 150px; margin: 2rem"
+    />
+
+    <div class="footer">
+      <div class="footer-details">
+        <div>
+          <p class="footer-head">EXCHANGE RATES API</p>
+          <a href="#" class="footer-ele">Exchange rates API</a>
+          <a href="#" class="footer-ele">Free Trial</a>
+          <a href="#" class="footer-ele">Pricing</a>
+          <a href="#" class="footer-ele">Developers</a>
+          <a href="#" class="footer-ele">Accuracy</a>
+        </div>
+        <div>
+          <p class="footer-head">Currency-Converters</p>
+          <a href="#" class="footer-ele">Historical Currecny Converter</a>
+        </div>
+        <div>
+          <p class="footer-head">FX Payments</p>
+          <a href="#" class="footer-ele">Corporate</a>
+          <a href="#" class="footer-ele">Individual</a>
+        </div>
+        <div>
+          <p class="footer-head">Resources</p>
+          <a href="#" class="footer-ele">API Resources</a>
+          <a href="#" class="footer-ele">Blog</a>
+          <a href="#" class="footer-ele">Frequently asked questions</a>
+        </div>
+      </div>
+      <div class="footer-share">
+        <a href="https://www.instagram.com/currencyxchangerate/"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://twitter.com/getconverter"><i class="fa-brands fa-twitter"></i></a>
+        <a href="https://www.facebook.com/currencyconverter/"><i class="fa-brands fa-facebook"></i></a>
+      </div>
+    </div>
+    <div class="line"></div>
+
+    <p style="text-align: center">
+      Copyright &copy; Akshit Kumar - FEE Project 2023
+    </p>
+    <script src="script.js"></script>
+  </body>
+</html>
